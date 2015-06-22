@@ -22,8 +22,8 @@ public_artifact_name="$public_projectid/$servicename"
 public_artifact_name_tagged="$public_artifact_name:$artifact_tag"
 
 # tag
-docker tag -t $artifact_name $public_artifact_name
-docker tag -t $artifact_name $public_artifact_name_tagged
+docker tag $artifact_name $public_artifact_name
+docker tag $artifact_name $public_artifact_name_tagged
 
 # pull
 docker push $public_artifact_name
