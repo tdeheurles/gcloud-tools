@@ -15,16 +15,3 @@ docker tag $artifact_name $artifact_name_tagged
 # Push to Google Cloud Engine
 gcloud docker push $artifact_name
 gcloud docker push $artifact_name_tagged
-
-
-# PUBLIC
-public_artifact_name="$public_projectid/$servicename"
-public_artifact_name_tagged="$public_artifact_name:$artifact_tag"
-
-# tag
-docker tag $artifact_name $public_artifact_name
-docker tag $artifact_name $public_artifact_name_tagged
-
-# pull
-docker push $public_artifact_name
-docker push $public_artifact_name_tagged
