@@ -48,4 +48,4 @@ RUN apt-get clean
 
 VOLUME ["/.config"]
 
-#CMD ["/bin/zsh"]
+CMD ["/bin/bash"]
