@@ -1,6 +1,7 @@
 # import names
 . ./release.cfg
 
+# artifact tag
 artifact_tag="$servicemajor.$serviceminor.$BUILD_NUMBER"
 
 # PRIVATE
