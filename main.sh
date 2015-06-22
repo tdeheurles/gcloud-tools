@@ -13,8 +13,8 @@ docker build -t $artifact_name .
 docker tag $artifact_name $artifact_name_tagged
 
 # Push to Google Cloud Engine
-gcloud preview docker push $artifact_name
-gcloud preview docker push $artifact_name_tagged
+gcloud docker push $artifact_name
+gcloud docker push $artifact_name_tagged
 
 
 # PUBLIC
