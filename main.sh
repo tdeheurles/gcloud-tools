@@ -1,5 +1,5 @@
 # import names
-. ./release.cfg
+. ./release.sh
 
 # artifact tag
 artifact_tag="$servicemajor.$serviceminor.$BUILD_NUMBER"
